@@ -11,6 +11,24 @@ body{
      background-color: hsla(150,81%,93%,0.5);
 }
 
+/*o auto serve para calcular automaticamente as distancias que restam da div para o body*/
+div#interface{
+	width:900px;
+    background-color: #ffffff;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+    padding: 10px;
+
+}
+
+img#icone{
+	position: absolute;
+	top:100px;
+
+
+
+}
+
 figure.foto-legenda{
 	border: 8px solid red;
 	box-shadow: 1px 1px 40px black;
@@ -37,4 +55,42 @@ figure.foto-legenda figcaption {
 figure.foto-legenda:hover figcaption {
 	opacity:1;
 
+}
+nav#menu{
+ display: block; /* um bloco pode flutuar pela tela*/
+
+}
+nav#menu h1{
+	display: none;
+}
+
+nav#menu ul{
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: -20px;
+	left: 500px;
+
+}
+
+
+nav#menu li{
+	display: inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 
+}
+
+nav#menu li:hover{
+	background-color: #606060;
+}
+
+nav#menu a{
+	color: #000000;
+	text-decoration:none;
+}
+
+nav#menu a:hover{
+	color: #ffffff;
 }
